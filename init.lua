@@ -91,13 +91,20 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 require 'options'
+-- Shadow the original 'options' lua script with desired overridden settings
+require 'custom/options'
 
 -- [[ Basic Keymaps ]]
 require 'keymaps'
+-- Shadow the original 'keymaps' lua script with desired overridden settings
+require 'custom/keymaps'
+
+-- [[ Autocommands ]]
+require 'custom/autocmds'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'
