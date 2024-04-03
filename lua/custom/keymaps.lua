@@ -33,3 +33,6 @@ vim.keymap.set('', '<C-PageUp>', '<cmd>tabprevious<CR>', { desc = 'Previous tab'
 vim.keymap.set('', '<C-PageDown>', '<cmd>tabnext<CR>', { desc = 'Next tab', silent = true })
 vim.keymap.set('', '<C-S-PageUp>', '<cmd>tabmove -1<CR>', { desc = 'Move tab left', silent = true })
 vim.keymap.set('', '<C-S-PageDown>', '<cmd>tabmove +1<CR>', { desc = 'Move tab right', silent = true })
+
+-- Configure vim live grep args plugin
+vim.keymap.set('n', '<leader>sa', ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>", { desc = '[S]earch with Live Grep [A]rgs' })

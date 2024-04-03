@@ -40,7 +40,7 @@ require('lazy').setup({
 
   require 'kickstart/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
+  -- require 'kickstart/plugins/tokyonight',
 
   require 'kickstart/plugins/todo-comments',
 
@@ -73,7 +73,9 @@ require('lazy').setup({
   require 'custom/kickstart-plugins/more-mini',
   require 'custom/kickstart-plugins/conform',
 
-  -- Add addicitonal custom plugins
+  -- Add additional custom plugins
+  -- What if it was purple!?
+  require 'custom/plugins/dracula_alt',
   require 'custom/plugins/nvim-tree',
   require 'custom/plugins/toggleterm',
   require 'custom/plugins/breadcrumbs',

@@ -40,12 +40,13 @@ return {
           ['telescope.nvim'] = true,
           ['noice.nvim'] = true,
           ['hop.nvim'] = true,
-          ['mini.statusline'] = true,
+          ['mini.statusline'] = false,
           ['mini.tabline'] = true,
           ['mini.starter'] = true,
           ['mini.cursorword'] = true,
         },
       }
+
       vim.cmd.colorscheme 'dracula'
       vim.cmd.colorscheme 'dracula-soft'
     end,
@@ -54,7 +55,8 @@ return {
     'nvim-lualine/lualine.nvim',
     opts = {
       options = {
-        theme = vim.g.colors_name,
+        -- theme = vim.g.colors_name,
+        theme = 'dracula',
         refresh = {
           statusline = 1000,
         },
