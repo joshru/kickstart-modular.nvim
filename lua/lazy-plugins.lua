@@ -80,6 +80,9 @@ require('lazy').setup({
   require 'custom/plugins/toggleterm',
   require 'custom/plugins/breadcrumbs',
   require 'custom/plugins/project',
+  require 'custom/plugins/markdown-preview',
+  require 'custom/plugins/karen-yank',
+  require 'custom/plugins/tabout',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
