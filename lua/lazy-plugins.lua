@@ -58,7 +58,7 @@ require('lazy').setup({
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
   -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.indent_line',
   -- require 'kickstart.plugins.lint',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
@@ -80,9 +80,10 @@ require('lazy').setup({
   require 'custom/plugins/toggleterm',
   require 'custom/plugins/breadcrumbs',
   require 'custom/plugins/project',
-  require 'custom/plugins/markdown-preview',
   require 'custom/plugins/karen-yank',
   require 'custom/plugins/tabout',
+  require 'custom/plugins/nvim-spectre',
+  require 'custom/plugins/posession',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

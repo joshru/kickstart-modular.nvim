@@ -93,6 +93,9 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed
 vim.g.have_nerd_font = true
 
+-- Relative line numbers
+vim.wo.relativenumber = true
+
 -- [[ Setting options ]]
 require 'options'
 -- Shadow the original 'options' lua script with desired overridden settings

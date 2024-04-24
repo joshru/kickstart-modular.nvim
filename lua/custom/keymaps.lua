@@ -13,6 +13,8 @@ vim.keymap.set('n', '<leader>ce', vim.diagnostic.open_float, { desc = '[C]ode di
 vim.keymap.set('n', '<leader>cf', function()
   vim.lsp.buf.format { asinc = true }
 end, { desc = '[C]ode [F]ormat' })
+-- Go to implementation
+-- vim.keymap.set('n', '<leader>gi', require('telescope.builtin').lsp_type_definitions, { desc = '[G]o to [I]mplementation' })
 -- Hide code diagnostics
 vim.keymap.set('n', '<leader>ch', '<cmd>lua vim.diagnostic.hide()<CR>', { desc = '[C]ode [H]ide Diagnostics' })
 -- Show code diagnostics
