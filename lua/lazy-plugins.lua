@@ -75,7 +75,8 @@ require('lazy').setup({
 
   -- Add additional custom plugins
   -- What if it was purple!?
-  require 'custom/plugins/dracula_alt',
+  -- require 'custom/plugins/dracula_alt',
+  require 'custom/plugins/catpuccin',
   require 'custom/plugins/nvim-tree',
   require 'custom/plugins/toggleterm',
   require 'custom/plugins/breadcrumbs',
@@ -84,6 +85,7 @@ require('lazy').setup({
   require 'custom/plugins/tabout',
   require 'custom/plugins/nvim-spectre',
   require 'custom/plugins/posession',
+  require 'custom/plugins/multiple-cursors',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
