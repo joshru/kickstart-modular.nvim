@@ -26,7 +26,7 @@ vim.keymap.set('n', '<leader>gr', '<cmd>Gitsigns reset_hunk<CR>', { desc = '[G]i
 -- Move to next Git hunk
 vim.keymap.set('n', '<leader>gh', '<cmd>Gitsigns next_hunk<CR>', { desc = '[G]it Next [H]unk' })
 -- Move to previous Git hunk
-vim.keymap.set('n', '<leader>gt', '<cmd>Gitsigns prev_hunk<CR>', { desc = '[G]it Previous Hunk' })
+vim.keymap.set('n', '<leader>gp', '<cmd>Gitsigns prev_hunk<CR>', { desc = '[G]it [P]revious Hunk' })
 -- Show original from Git
 vim.keymap.set('n', '<leader>go', '<cmd>Gitsigns preview_hunk<CR>', { desc = '[G]it View [O]riginal' })
 
