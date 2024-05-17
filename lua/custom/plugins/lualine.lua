@@ -3,7 +3,7 @@ return {
   opts = {
     options = {
       -- theme = 'dracula',
-      theme = 'catppuccin-macchiato',
+      theme = 'catppuccin-mocha',
       refresh = {
         statusline = 1000,
       },
