@@ -4,7 +4,7 @@ return {
     'stevearc/conform.nvim',
     opts = {
       format_on_save = function(bufnr)
-        local disable_filetypes = {}
+        local disable_filetypes = { proto = true }
         return {
           timeout_ms = 500,
           lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
