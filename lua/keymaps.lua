@@ -1,6 +1,19 @@
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
+-- Custom functions
+-- stolen from @tafryn
+local quickfix_toggle = function()
+  for _, v in pairs(vim.fn.getwininfo()) do
+    if v['quickfix'] == 1 then
+      return vim.cmd.cclose()
+    end
+  end
+  return vim.cmd.copen()
+end
+vim.keymap.set('n', '<F4>', '<cmd>cp<CR>', { desc = 'Goto previous quickfix list element' })
+vim.keymap.set('n', '<F6>', '<cmd>cn<CR>', { desc = 'Goto next quickfix list element' })
+vim.keymap.set('n', '<C-q>', quickfix_toggle, { desc = 'Toggle the QuickFix List' })
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
