@@ -88,6 +88,7 @@ require('lazy').setup({
   require 'custom/plugins/multiple-cursors',
   -- require 'custom/plugins/feline',
   require 'custom/plugins/lualine',
+  require 'custom/plugins/precognition',
   require 'custom/plugins/neotest',
 }, {
   ui = {
