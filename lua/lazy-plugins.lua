@@ -84,12 +84,13 @@ require('lazy').setup({
   require 'custom/plugins/karen-yank',
   require 'custom/plugins/tabout',
   require 'custom/plugins/nvim-spectre',
-  require 'custom/plugins/posession',
+  -- require 'custom/plugins/posession',
   require 'custom/plugins/multiple-cursors',
   require 'custom/plugins/lualine',
   require 'custom/plugins/precognition',
   require 'custom/plugins/neotest',
   require 'custom/plugins/nvim-bqf',
+  require 'custom/plugins/crates',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
