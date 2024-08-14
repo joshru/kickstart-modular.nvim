@@ -11,7 +11,8 @@ return {
         { nil, '<M-2>', 'Vertical Terminal', 'vertical', 0.4 },
         { nil, '<M-3>', 'Float Terminal', 'float', nil },
         { nil, '<C-\\>', 'Float Terminal', 'float', nil },
-        { 'lazygit', '<leader>gg', '[G]it [G]UI', 'float', nil },
+        -- { 'lazygit', '<leader>gg', '[G]it [G]UI', 'float', nil },
+        { 'lazygit', '<M-g>', '[G]it [G]UI', 'float', nil },
       }
 
       local function get_buf_size()
