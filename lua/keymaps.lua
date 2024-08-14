@@ -11,7 +11,7 @@ local quickfix_toggle = function()
   end
   return vim.cmd.copen()
 end
-vim.keymap.set('n', '<F4>', '<cmd>cp<CR>', { desc = 'Goto previous quickfix list element' })
+vim.keymap.set('n', '<F5>', '<cmd>cp<CR>', { desc = 'Goto previous quickfix list element' })
 vim.keymap.set('n', '<F6>', '<cmd>cn<CR>', { desc = 'Goto next quickfix list element' })
 vim.keymap.set('n', '<C-q>', quickfix_toggle, { desc = 'Toggle the QuickFix List' })
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
