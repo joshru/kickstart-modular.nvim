@@ -81,6 +81,15 @@ return {
       pcall(require('telescope').load_extension, 'ui-select')
       pcall(require('telescope').load_extension, 'live_grep_args')
 
+      -- Custom function for ignoring results in test directory
+      local no_test_search = function()
+        local opts = {
+          -- find_command = { 'rg', '--files', '--color', 'never', '--glob', '!**/test/*' },
+          glob_pattern = { '!**/test/*' },
+        }
+        require('telescope.builtin').live_grep(opts)
+      end
+
       -- See `:help telescope.builtin`
       local builtin = require 'telescope.builtin'
       vim.keymap.set('n', '<leader>sh', builtin.help_tags, { desc = '[S]earch [H]elp' })
@@ -89,6 +98,7 @@ return {
       vim.keymap.set('n', '<leader>ss', builtin.builtin, { desc = '[S]earch [S]elect Telescope' })
       vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch current [W]ord' })
       vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
+      vim.keymap.set('n', '<leader>sG', no_test_search, { desc = '[S]earch by [G]rep (No test directory)' })
       vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
       vim.keymap.set('n', '<leader>sr', builtin.resume, { desc = '[S]earch [R]esume' })
       vim.keymap.set('n', '<leader>sp', builtin.resume, { desc = '[S]earch [P]roject Files' })
