@@ -42,8 +42,9 @@ return {
     }
   end,
   config = function()
-    require('which-key').register {
-      ['<leader>t'] = { name = '[T]est', _ = 'which_key_ignore' },
+    require('which-key').add {
+      { "<leader>t", group = "[T]est" },
+      { "<leader>t_", hidden = true },
     }
     vim.keymap.set('n', '<leader>tt', function()
       require('neotest').run.run()
