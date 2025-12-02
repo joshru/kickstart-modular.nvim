@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
     map('gy', require('telescope.builtin').lsp_type_definitions, '[G]oto T[y]pe Definition')
     map('<leader>sd', require('telescope.builtin').lsp_document_symbols, '[S]earch [D]ocument symbols')
-    map('<leader>sw', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[S]earch [W]orkspace symbols')
+    --map('<leader>sw', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[S]earch [W]orkspace symbols')
     map('<leader>cr', vim.lsp.buf.rename, '[C]ode [R]ename')
     map('<leader>d', vim.lsp.buf.hover, 'Hover [D]ocumentation')
   end,
